@@ -68,10 +68,9 @@
   (if (< n 0)
     ()
     (append
-      (append
-        (cons (- (num_g) n) '("\t"))
-        (symbolize_st st))
-      '("\n")
+      ;; 現在の世代
+      (cons (- (num_g) n) '("\t")) (symbolize_st st) '("\n")
+      ;; 次の世代
       (run (- n 1) (next_state st)))))
 
 ;; 状態initial_stateを31世代進めて、その結果を画面に表示する
