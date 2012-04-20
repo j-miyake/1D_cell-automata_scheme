@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>1D cell-automata by Scheme - johnny-miyake's github page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+  <meta property="og:title" content="1D cell-automata by Scheme - johnny-miyake's github page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://johnny-miyake.github.com/1D_cell-automata_scheme/" />
+  <meta property="og:image" content="img/1D_cell-automata_scheme.ss.png" />
+  <meta property="og:description" content='This is a program that displaying a Sierpinski gasket.' />
+
+	<meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Antic+Didone' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet/less" href="/less/subpages_style.less">
+	<script src="js/libs/less-1.2.1.min.js"></script>
+  <script src="js/libs/jquery.biggerlink.min.js"></script>
+  <script type="text/javascript">  
+      $(function(){  
+          $('#badge-inner div').biggerlink();  
+      });  
+  </script>  
+	
+	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
+	to style.css, and replace the 2 lines above by this one:
+
+	<link rel="stylesheet/less" href="less/style.css">
+	 -->
+
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=218241258233694";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">johnny-miyake</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="#about">Profile</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>1D cell-automata by Scheme</h1>
+        <p>This is a program that displaying a Sierpinski gasket.</p>
+        <p>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/1D_cell-automata_scheme">Repo &raquo;</a>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/1D_cell-automata_scheme/zipball/master">Zip &raquo;</a>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/1D_cell-automata_scheme/tarball/master">Tar &raquo;</a>
+        </p>
+        <div id="description">
+          <h2>Installation &amp; Usage</h2>
+          <div id="left">
+            <div class="usage">
+              <p>1. Download the project from the links above (Zip or Tar).</p>
+              <p>2. Execute the program on a Scheme processor (e.g.: Gauche).</p>
+            </div>
+            <div class="social-buttons">
+              <div class="social-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="johnny_miyake" data-count="vertical" data-lang="ja">ツイート</a></div>
+              <div class="social-button"><div class="fb-like" data-href="http://johnny-miyake.github.com/1D_cell-automata_scheme/" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div></div>
+              <div class="social-button grow-button">
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=e05fafe0-5952-012f-0669-12313f00aced&shape=square"></script>
+              </div>
+              <div class="social-button">
+                <a href="http://b.hatena.ne.jp/entry/http://johnny-miyake.github.com/1D_cell-automata_scheme/" class="hatena-bookmark-button" data-hatena-bookmark-title="1D cell-automata by Scheme - johnny-miyake's github page" data-hatena-bookmark-layout="vertical" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+              </div>
+              <div class="clear">&nbsp;</div>
+            </div>
+          </div>
+          <div id="right">
+            <img src="img/1D_cell-automata_scheme.ss.png" alt="1D_cell-automata_scheme screen shot"/>
+          </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+      </div>
+
+      <script src="https://gist.github.com/2425117.js"> </script>
+      <hr>
+
+      <div class="badge-outer">
+        <div class="badge-inner">
+          <div class="badge-text">
+            <a href="https://github.com/johnny-miyake">Fork me</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; johnny-miyake 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="js/libs/bootstrap/transition.js"></script>
+<script src="js/libs/bootstrap/collapse.js"></script>
+
+<script src="js/script.js"></script>
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
